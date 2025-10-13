@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Gallery on duynlk.id.vn</title>
-    <link>/</link>
+    <link>https://duynlk.id.vn/gallery/</link>
     <description>Recent content in My Gallery on duynlk.id.vn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 - duynlk.id.vn</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 - duynlk.id.vn</copyright><atom:link href="https://duynlk.id.vn/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coffee</title>
-      <link>/coffee/</link>
+      <link>https://duynlk.id.vn/gallery/coffee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/coffee/</guid>
-        <media:content url="/coffee/IMG_0121_hu_272624142cf85fd2.jpeg" type="image/jpeg"/>
+      <guid>https://duynlk.id.vn/gallery/coffee/</guid>
+        <media:content url="https://duynlk.id.vn/gallery/coffee/IMG_0121_hu_272624142cf85fd2.jpeg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;/coffee/IMG_0121_hu_272624142cf85fd2.jpeg&quot; /&gt;
+          &lt;img src=&quot;https://duynlk.id.vn/gallery/coffee/IMG_0121_hu_272624142cf85fd2.jpeg&quot; /&gt;
           &lt;p&gt;&lt;no value&gt;&lt;/p&gt;
         </description></item>
   </channel>
