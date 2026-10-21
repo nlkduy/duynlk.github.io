@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@ những người tôi yêu đã khuất
 tan vào gió, cát, mây, sương">
 <meta name="author" content="">
 <link rel="canonical" href="https://duynlk.id.vn/blog/posts/toi-di-tim-lai-chinh-toi/">
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://duynlk.id.vn/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://duynlk.id.vn/blog/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://duynlk.id.vn/blog/favicon-32x32.png">
@@ -37,7 +37,13 @@ tan vào gió, cát, mây, sương">
         }
 
     </style>
-</noscript><meta property="og:url" content="https://duynlk.id.vn/blog/posts/toi-di-tim-lai-chinh-toi/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
+
+</script><meta property="og:url" content="https://duynlk.id.vn/blog/posts/toi-di-tim-lai-chinh-toi/">
   <meta property="og:site_name" content="DuyKa&#39;s Blog">
   <meta property="og:title" content="Tôi đi tìm lại chính tôi">
   <meta property="og:description" content="Bài tham dự minigame “Mượn Hình Tỏ Chữ” do Fanpage “HIVE Stories - Nơi những câu chuyện bắt đầu” tổ chức.
@@ -59,9 +65,10 @@ tan vào gió, cát, mây, sương">
     <meta property="article:tag" content="Trải Nghiệm">
     <meta property="article:tag" content="Bài Dự Thi">
     <meta property="article:tag" content="Viết Ở Cần Thơ">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tôi đi tìm lại chính tôi">
-<meta name="twitter:description" content="Bài tham dự minigame &ldquo;Mượn Hình Tỏ Chữ&rdquo; do Fanpage &ldquo;HIVE Stories - Nơi những câu chuyện bắt đầu&rdquo; tổ chức.
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tôi đi tìm lại chính tôi">
+  <meta name="twitter:description" content="Bài tham dự minigame “Mượn Hình Tỏ Chữ” do Fanpage “HIVE Stories - Nơi những câu chuyện bắt đầu” tổ chức.
 Tuyển tập thơ Mượn Hình Tỏ Chữ
 * * *
 Tôi đi tìm lại chính tôi
@@ -124,27 +131,19 @@ tan vào gió, cát, mây, sương">
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://duynlk.id.vn/blog/" accesskey="h" title="DuyKa&#39;s Blog (Alt + H)">DuyKa&#39;s Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -160,7 +159,7 @@ tan vào gió, cát, mây, sương">
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://duynlk.id.vn/blog/tim-kiem" title="Tìm kiếm">
                     <span>Tìm kiếm</span>
@@ -192,11 +191,13 @@ tan vào gió, cát, mây, sương">
     <h1 class="post-title entry-hint-parent">
       Tôi đi tìm lại chính tôi
     </h1>
-    <div class="post-meta"><span title='2023-04-04 23:35:48 +0700 +07'>April 4, 2023</span>
+    <div class="post-meta">
+
+<span title='2023-04-04 23:35:48 +0700 +07'>April 4, 2023</span>
 
 </div>
   </header> 
-  <div class="post-content"><p><em>Bài tham dự minigame &ldquo;Mượn Hình Tỏ Chữ&rdquo; do Fanpage &ldquo;HIVE Stories - Nơi những câu chuyện bắt đầu&rdquo; tổ chức.</em></p>
+  <div class="post-content md-content"><p><em>Bài tham dự minigame &ldquo;Mượn Hình Tỏ Chữ&rdquo; do Fanpage &ldquo;HIVE Stories - Nơi những câu chuyện bắt đầu&rdquo; tổ chức.</em></p>
 <p><a href="https://truyennhaong.vn/#/s/tuyen-tap-tho-muon-hinh-to-chu">Tuyển tập thơ Mượn Hình Tỏ Chữ</a></p>
 <p>* * *</p>
 <p>Tôi đi tìm lại chính tôi<br>
@@ -238,12 +239,10 @@ và người cũng có trong tôi&hellip;</p>
 <nav class="paginav">
   <a class="prev" href="https://duynlk.id.vn/blog/posts/tren-mot-mat-trang-hong/">
     <span class="title">« Prev</span>
-    <br>
     <span>Trên một mặt trăng hồng (On a pink moon)</span>
   </a>
   <a class="next" href="https://duynlk.id.vn/blog/posts/xa-nha/">
     <span class="title">Next »</span>
-    <br>
     <span>Xa nhà</span>
   </a>
 </nav>
@@ -253,24 +252,33 @@ và người cũng có trong tôi&hellip;</p>
     </main>
     
 <footer class="footer">
-        <span>© 2020 - 2025 DuyKa&rsquo;s Blog</span> · 
+        <span>© 2020 - 2026 DuyKa&rsquo;s Blog</span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -297,25 +305,25 @@ và người cũng có trong tôi&hellip;</p>
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
