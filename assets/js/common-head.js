@@ -10,6 +10,8 @@
   var description = dataset.description || defaultDescription;
   var canonicalUrl = siteUrl + '/' + path;
   var imageUrl = siteUrl + '/avatar.jpg';
+  var scriptSrc = (script && script.getAttribute('src')) || '';
+  var basePath = scriptSrc.replace(/assets\/js\/common-head\.js.*$/, '');
 
   function escapeHtml(value) {
     return String(value).replace(/[&<>"']/g, function (character) {
@@ -73,11 +75,11 @@
         'https://linkedin.com/in/nlkduy/'
       ]
     }) + '<\/script>',
-    '<link rel="shortcut icon" href="favicon.png">',
+    '<link rel="shortcut icon" href="' + basePath + 'favicon.png">',
     '<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">',
-    '<script defer src="assets/fontawesome/js/all.min.js"><\/script>',
-    '<script defer src="assets/js/common-header.js"><\/script>',
-    '<script defer src="assets/js/common-footer.js"><\/script>',
-    '<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">'
+    '<script defer src="' + basePath + 'assets/fontawesome/js/all.min.js"><\/script>',
+    '<script defer src="' + basePath + 'assets/js/common-header.js"><\/script>',
+    '<script defer src="' + basePath + 'assets/js/common-footer.js"><\/script>',
+    '<link id="theme-style" rel="stylesheet" href="' + basePath + 'assets/css/devresume.css">'
   ].join(''));
 })();
